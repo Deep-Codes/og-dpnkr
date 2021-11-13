@@ -5,6 +5,9 @@ export interface ImageProps {
   top: string;
 }
 
+// For CSS Background patterns
+// https://codepen.io/bansal-io/pen/mdereZN
+
 const OgImage: React.FC<ImageProps> = ({ title, top }) => {
   return (
     <div className='min-h-screen w-full  flex justify-center items-center text-fg'>
@@ -16,14 +19,24 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
           height: '630px',
           padding: '80px',
           background: 'var(--bg)',
+          // backgroundImage:
+          //   'radial-gradient(ellipse  100% 100% , #181818, #181818 25%, transparent 25%),radial-gradient(ellipse  50% 50% , #333, #333 25%, #252525 25%)',
+          // backgroundSize: '2em 2em, 4em 4em',
+          backgroundImage:
+            'linear-gradient(#222222 1px , transparent 1px ),linear-gradient(to right, #222222 1px , transparent 1px )',
+          backgroundSize: '100px 100px',
         }}
       >
         <p className='mono' style={{ fontSize: '28px', marginBottom: '25px' }}>
           {top}
         </p>
         <h1
-          style={{ fontSize: '72px', lineHeight: '80px' }}
-          className='font-bold'
+          style={{
+            fontSize: '72px',
+            lineHeight: '80px',
+            fontWeight: 'bold',
+            fontFamily: 'Inter',
+          }}
         >
           {title}
         </h1>
