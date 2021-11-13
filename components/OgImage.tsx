@@ -27,7 +27,10 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
           backgroundSize: '100px 100px',
         }}
       >
-        <p className='mono' style={{ fontSize: '28px', marginBottom: '25px' }}>
+        <p
+          className='mono'
+          style={{ fontSize: '28px', marginBottom: '25px', color: '#c4c4c4' }}
+        >
           {top}
         </p>
         <h1
@@ -41,7 +44,7 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
           {title}
         </h1>
         <div className='flex justify-between w-full'>
-          <p className='mono' style={{ fontSize: '28px' }}>
+          <p className='mono' style={{ fontSize: '28px', color: '#c4c4c4' }}>
             dpnkr.in
           </p>
           <svg

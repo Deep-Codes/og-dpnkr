@@ -7,6 +7,27 @@
   --fg: #ffffff;
 }
 
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: bold;
+  src: url('/fonts/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Vera';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/fonts/Vera-Mono.woff2') format('woff2');
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
