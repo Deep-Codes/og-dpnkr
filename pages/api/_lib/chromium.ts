@@ -18,7 +18,7 @@ export async function getScreenshot(url, type, isDev) {
   await page.goto(url, {
     waitUntil: 'networkidle0',
   });
-  const element = await page.$('#usa-map');
+  const element = await page.$('#preview');
   console.log('*************************')
   console.log(element)
   console.log('*************************')

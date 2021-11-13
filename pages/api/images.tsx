@@ -5,6 +5,8 @@ import { getScreenshot } from './_lib/chromium';
 const IS_DEV = !process.env.AWS_REGION;
 const IS_HTML_DEBUG = process.env.OG_HTML_DEBUG === '1';
 
+// http://localhost:3000/images?title=Using%20CSS%20variables%20with%20TailwindCSS&top=October%205%20,%202021%20-%203min%20read
+
 const HOST = 'https://og.dpnkr.in';
 
 export default async function handler(
@@ -17,7 +19,11 @@ export default async function handler(
     // @ts-ignore
     const queryString = new URLSearchParams(url.query).toString();
     const fileType = url.query.fileType || 'png';
-
+    console.log('******************');
+    console.log(queryString);
+    console.log('******************');
+    console.log(`${HOST}/images?${queryString}`);
+    console.log('******************');
     const file = await getScreenshot(
       `${HOST}/images?${queryString}`,
       fileType,

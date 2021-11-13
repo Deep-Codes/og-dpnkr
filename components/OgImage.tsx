@@ -36,10 +36,10 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
             width='60'
             height='60'
             viewBox='0 0 493 383'
-            fill-rule='evenodd'
-            clip-rule='evenodd'
-            stroke-linejoin='round'
-            stroke-miterlimit='2'
+            fillRule='evenodd'
+            clipRule='evenodd'
+            strokeLinejoin='round'
+            strokeMiterlimit='2'
             fill='white'
           >
             <path d='M218.618 0h69.188l204.933 382.941h-78.407L248.034 69.947l-29.416 49.748 141.486 263.246h-214.66l34.124-69.638h73.685L145.444 119.695 218.618 0z'></path>
