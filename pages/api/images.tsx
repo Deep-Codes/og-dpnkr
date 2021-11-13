@@ -19,11 +19,6 @@ export default async function handler(
     // @ts-ignore
     const queryString = new URLSearchParams(url.query).toString();
     const fileType = url.query.fileType || 'png';
-    console.log('******************');
-    console.log(queryString);
-    console.log('******************');
-    console.log(`${HOST}/images?${queryString}`);
-    console.log('******************');
     const file = await getScreenshot(
       `${HOST}/images?${queryString}`,
       fileType,
