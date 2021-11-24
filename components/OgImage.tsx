@@ -37,7 +37,7 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
           style={{
             fontSize: '72px',
             lineHeight: '80px',
-            fontWeight: 'bold',
+            fontWeight: 800,
             fontFamily: 'Inter',
           }}
         >

@@ -20,7 +20,7 @@ const Home = () => {
         </p>
         <h1
           style={{ fontSize: '72px', lineHeight: '80px' }}
-          className='font-bold'
+          className='font-extrabold'
         >
           My learnings working as Software Developer for 6months
         </h1>
