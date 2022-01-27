@@ -8,7 +8,19 @@ export interface ImageProps {
 // For CSS Background patterns
 // https://codepen.io/bansal-io/pen/mdereZN
 
-const OgImage: React.FC<ImageProps> = ({ title, top }) => {
+const OgImage: React.FC<ImageProps> = ({ title = '', top }) => {
+  const lg = {
+    fontSize: '72px',
+    lineHeight: '80px',
+    fontWeight: 800,
+    fontFamily: 'Inter',
+  };
+  const md = {
+    fontSize: '62px',
+    lineHeight: '70px',
+    fontWeight: 800,
+    fontFamily: 'Inter',
+  };
   return (
     <div className='min-h-screen w-full  flex justify-center items-center text-fg'>
       <div
@@ -33,16 +45,7 @@ const OgImage: React.FC<ImageProps> = ({ title, top }) => {
         >
           {top}
         </p>
-        <h1
-          style={{
-            fontSize: '72px',
-            lineHeight: '80px',
-            fontWeight: 800,
-            fontFamily: 'Inter',
-          }}
-        >
-          {title}
-        </h1>
+        <h1 style={title.length < 60 ? lg : md}>{title}</h1>
         <div className='flex justify-between w-full'>
           <p className='mono' style={{ fontSize: '28px', color: '#c4c4c4' }}>
             dpnkr.in
