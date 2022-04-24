@@ -22,7 +22,7 @@ const Home = () => {
           style={{ fontSize: '72px', lineHeight: '80px' }}
           className='font-extrabold'
         >
-          My learnings working as Software Developer for 6months
+          Hello from Deepankar
         </h1>
         <div className='flex justify-between w-full'>
           <p className='mono' style={{ fontSize: '28px' }}>

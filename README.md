@@ -1,6 +1,6 @@
 # Og-dpnkr
 
-Open Graph Image as a Service for my [personal blog]()
+Open Graph Image as a Service for my [personal blog](https://dpnkr.in/blog)
 
 Based on Vercel's implementation [og-image](https://github.com/vercel/og-image)
 
@@ -15,4 +15,8 @@ Has 2 params:
 
 ## Example
 
-`https://og.dpnkr.in/api/images?title=Hello from Deepankar&top=14th June 2001`
+The url: `https://og.dpnkr.in/api/images?title=Hello from Deepankar&top=14th June 2001`
+
+Result:
+
+![open graph image generated](/public/exp.png)
