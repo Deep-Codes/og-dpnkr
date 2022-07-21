@@ -21,7 +21,7 @@ const ReactIndia: React.FC<ReactIndiaImageProps> = ({
       >
         <img src='/pattern.svg' className='absolute top-0 left-0 ' alt='' />
         <div className='flex flex-col justify-between h-full z-10'>
-          <img width={300} height={300} src={image} alt='' />
+          <img className='object-cover h-[300px]' src={image} />
           <img height={100} width={250} src='/reactindia.svg' alt='' />
         </div>
         <div className='flex flex-col justify-between h-full z-10'>
